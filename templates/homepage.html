@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    story generator homepage
+{% endblock %}
+
+{% block main %}
+    <!-- table from https://getbootstrap.com/docs/4.0/content/tables/ -->
+    <script src="//my.visme.co/visme.js"></script>
+    <div class="visme_d" data-url="jwvxvoj1-untitled-project" data-w="1366" data-h="768" data-domain="my"></div>
+    <table align="center">
+        <tr>
+            <td>
+                <form action="/input" method="get">
+                    <button class="btn btn-secondary" type="submit">You input a Story!</button>
+                </form>
+            </td>
+            <td>
+                <form action="/numInput" method="get">
+                    <button class="btn btn-secondary" type="submit">I tell you a Story!</button>
+                </form>
+            </td>
+            <td>
+                <form action="/bookInput" method="get">
+                    <button class="btn btn-secondary" type="submit">Install a Book!</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    numInput
+{% endblock %}
+
+{% block main %}
+    <!-- table from https://getbootstrap.com/docs/4.0/content/tables/ -->
+    <!-- the input page where someone puts in a text file -->
+
+    <table class="table">
+        <form action="bookInput" method="post">
+        <div class"large" style="text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff; font-size:50px;">
+            <strong>What Book Should We Download?</strong>
+            <div class="form-group form-lg">
+            <!-- min and number html code from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_number -->
+            <input class="form-control" name="bookNum" placeholder="Project Gutenberg ID Number" type="number" min="1" id="bookNum">
+        </div>
+        <button class="btn btn-secondary" type="submit">Download Book</button>
+        </div>
+        </form>
+    </table>
+{% endblock %}

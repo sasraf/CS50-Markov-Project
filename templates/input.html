@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Input
+{% endblock %}
+
+{% block main %}
+    <!-- table from https://getbootstrap.com/docs/4.0/content/tables/ -->
+    <!-- the input page where someone puts in a text file -->
+
+    <table class="table">
+        <form action="/input" method="post">
+        <div class"text-center" style="text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff; font-size:60px;">
+            <strong>Write me a story</strong>
+        </div>
+        <div class="form-group" >
+             <textarea autocomplete="off" autofocus class="form-control .input-lg .col-lg-*" name="word" placeholder="Drag bottom right corner to expand" type="text" id="textInput" style="width: 100%; height: 400px;"></textarea>
+        </div>
+        <button class="btn btn-secondary" type="submit">Create story</button>
+        </form>
+  </table>
+{% endblock %}

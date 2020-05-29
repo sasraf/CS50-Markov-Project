@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Output
+{% endblock %}
+
+{% block main %}
+<!-- https://getbootstrap.com/docs/4.0/components/jumbotron/ -->
+<div>
+    <!--<h1 class="display-4">Output</h1>-->
+    <hr class="my-4">
+    <div style="text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff; font-size:40px; background-color: white; color: grey;
+		font-family: Comic Sans MS, cursive, sans-serif; padding: 15px;
+		outline-style: double;">
+        <p>Once upon a time{{ generatedText }}</p>
+    </div>
+    <p class="lead">
+        <a class="btn btn-secondary btn-lg" href="/" role="button">Go Home</a>
+    </p>
+</div>
+{% endblock %}

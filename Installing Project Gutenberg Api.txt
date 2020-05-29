@@ -1,0 +1,4 @@
+sudo apt-get install libdb++-dev
+export BERKELEYDB_DIR=/usr
+
+sudo pip install gutenberg
